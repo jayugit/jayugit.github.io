@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup Buttons</title>
+    <title>자유깃</title>
     <style>
+        body {
+            background-color: orange;
+        }
         .button {
             background-color: navy;
             color: white;
@@ -23,13 +26,18 @@
         #loginButton {
             right: 110px; /* Adjust to prevent overlap */
         }
+        h1 {
+            color: navy;
+        }
     </style>
 </head>
 <body>
+    <h1>자유깃</h1>
+    <p>우리들의 자유로운 커뮤니티 사이트</p>
     <button id="joinButton" class="button">회원가입</button>
     <button id="loginButton" class="button">로그인</button>
   <p>-------------------------------------------------------------------------------------------------------------------------------------------</p>
-  <button><a href="servers.html>서버</a></button>
+<a href="servers.html" class="link-button">서버</a>
     <script>
         document.getElementById('joinButton').onclick = function() {
             window.open('https://github.com/join', '_blank', 'width=800,height=600');
